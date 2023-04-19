@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Name Check</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        text-align: center;
+      }
+      input {
+        font-size: 1rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: none;
+        margin-right: 0.5rem;
+      }
+      button {
+        font-size: 1rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: none;
+        background-color: white;
+        color: black;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>عيد سعيد آل ابراهيم</h1>
+    <h2>تقبل الله منا ومنكم صالح الأعمال</h2>
+    <div>
+      <input type="text" id="name" placeholder="اكتب اسمك هنا">
+      <button onclick="checkName()">إرسل</button>
+    </div>
+    <p id="output"></p>
+    <script>
+      function checkName() {
+        var name = document.getElementById("name").value;
+        if (name == "سلمان") {
+          document.getElementById("output").innerHTML = "Go there";
+        } else if (name == "ابراهيم") {
+          document.getElementById("output").innerHTML = "Go here";
+        } else {
+          document.getElementById("output").innerHTML = "!محد من ال ابراهيم بهذا الاسم";
+        }
+      }
+    </script>
+  </body>
+</html>
