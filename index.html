@@ -27,22 +27,28 @@
     </style>
   </head>
   <body>
-    <h1>عيد سعيد آل ابراهيم</h1>
+    <h1> ❤️عيد سعيد آل ابراهيم </h1>
     <h2>تقبل الله منا ومنكم صالح الأعمال</h2>
+    <h3>فقرة : وين عيديتي</h3>
     <div>
-      <input type="text" id="name" placeholder="اكتب اسمك هنا">
+      <input type="text" id="name" placeholder="اكتب اسمك الأول هنا">
       <button onclick="checkName()">إرسل</button>
     </div>
     <p id="output"></p>
     <script>
       function checkName() {
         var name = document.getElementById("name").value;
-        if (name == "سلمان") {
-          document.getElementById("output").innerHTML = "Go there";
+        if (name == "محمد") {
+          document.getElementById("output").innerHTML = "جرب طاولة الزاوية";
         } else if (name == "ابراهيم") {
-          document.getElementById("output").innerHTML = "Go here";
+          document.getElementById("output").innerHTML = "!يمكنها معي";
+        }  else if (name == "امل") {
+          document.getElementById("output").innerHTML = "يوه مدري يمكن نسيناك";
+        }
+        else if (name == "عمر") {
+          document.getElementById("output").innerHTML = "اختك تقول انا اضبطك";
         } else {
-          document.getElementById("output").innerHTML = "!محد من ال ابراهيم بهذا الاسم";
+          document.getElementById("output").innerHTML = "!تاكد انك من العائلة";
         }
       }
     </script>
